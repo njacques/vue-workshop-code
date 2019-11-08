@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/vue.js"></script>
+    <title>Invoice Generator</title>
+  </head>
+  <body>
+    <div class="invoice-box">
+      <table cellpadding="0" cellspacing="0">
+        <tr class="top">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td class="title">
+                  <img
+                    src="assets/logo.png"
+                    style="width:100%; max-width:300px;"
+                  />
+                </td>
+
+                <td>
+                  Invoice #: 123<br />
+                  Created: January 1, 2015<br />
+                  Due: February 1, 2015
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr class="information">
+          <td colspan="4">
+            <table>
+              <tr>
+                <td>
+                  Sparksuite, Inc.<br />
+                  12345 Sunny Road<br />
+                  Sunnyville, CA 12345
+                </td>
+
+                <td>
+                  Acme Corp.<br />
+                  John Doe<br />
+                  john@example.com
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr class="heading">
+          <td colspan="3">Payment Method</td>
+          <td>Cheque #</td>
+        </tr>
+
+        <tr class="details">
+          <td colspan="3">Cheque</td>
+          <td>1000</td>
+        </tr>
+
+        <tr class="heading">
+          <td>Item</td>
+          <td>Unit Cost</td>
+          <td>Quantity</td>
+          <td>Price</td>
+        </tr>
+
+        <tr class="item">
+          <td>Website Design</td>
+          <td>$3000</td>
+          <td>1</td>
+          <td>$3000</td>
+        </tr>
+
+        <tr class="item">
+          <td>Domain Registration</td>
+          <td>$20</td>
+          <td>2</td>
+          <td>$40</td>
+        </tr>
+
+        <tr class="total">
+          <td colspan="3"></td>
+          <td>Total: $3040</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

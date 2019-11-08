@@ -1,0 +1,241 @@
+<!-- Comment Form -->
+<article class="media">
+  <div class="media-content">
+    <div class="field">
+    <p class="control">
+      <textarea class="textarea" placeholder="Add a comment..." />
+    </p>
+    </div>
+    <div class="field">
+    <p class="control">
+      <button class="button">Post comment</button>
+    </p>
+    </div>
+  </div>
+</article>
+
+<!-- Modal -->
+<div class="modal">
+  <div class="modal-background"/>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">My Modal</p>
+        <button class="delete" aria-label="close" />
+      </header>
+      <section class="modal-card-body"></section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Save changes</button>
+        <button class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<!-- News Item -->
+<article class="media">
+  <figure class="media-left">
+    <button class="button is-white">
+      <span class="icon is-small">
+        <i class="fas fa-thumbs-up" title="Vote up" />
+      </span>
+    </button>
+  </figure>
+  <div class="media-content">
+    <div>
+      <p>
+        <a href=""><strong>Title</strong></a> <small>(domain)</small>
+      </p>
+    </div>
+    <nav class="level is-mobile">
+      <div class="level-left">
+        <span class="level-item">
+          <small>3 votes · posted by Fred · 5 mins ago</small>
+        </span>
+        <a href="" class="level-item">
+          <span class="icon is-small"><i class="fas fa-comments" /></span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</article>
+
+<!-- News Item Comments -->
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-48x48">
+      <img src="https://bulma.io/images/placeholders/96x96.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        Comment
+        <br>
+        <small>Author · 5 mins ago</small>
+      </p>
+    </div>
+  </div>
+</article>
+
+<!-- Main layout -->
+<div>
+  <nav 
+    class="navbar is-info"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">YANS!</a>
+      
+      <a
+        role="button"
+        class="navbar-burger burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true"/>
+        <span aria-hidden="true"/>
+        <span aria-hidden="true"/>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="/" class="navbar-item">Top</a>
+        <a href="/new" class="navbar-item">New</a>
+        <a href="/submit" class="navbar-item">Submit</a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="/register" class="button is-primary">
+              <strong>Register</strong>
+            </a>
+            <a href="/login" class="button is-light">Log in</a>
+            <button class="button is-light">Log out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- Login -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="column is-4 is-offset-4">
+        <h3 class="title has-text-grey">Login</h3>
+        <p class="subtitle has-text-grey">Please login to proceed.</p>
+        <div class="box">
+          <form>
+            <div class="field">
+              <div class="control">
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Your Email"
+                  autofocus
+                >
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <input
+                  class="input"
+                  type="password"
+                  placeholder="Your Password"
+                >
+              </div>
+            </div>
+            <button class="button is-block is-info is-fullwidth">Login</button>
+          </form>
+        </div>
+        <div class="notification is-danger">
+          <strong>Oops - we couldn't log you in!</strong><br>
+          Please check your email and password and try again.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Registration Form -->
+<section class="section">
+  <div class="container">
+    
+    <div class="field">
+      <label class="label">Username</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          autofocus
+        >
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+        >
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Password</label>
+      <div class="control">
+        <input
+          class="input"
+          type="password"
+        >
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <button class="button is-link">Register</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Submit News -->
+<section class="section">
+  <div class="container">
+    
+    <div class="field">
+      <label class="label">Title</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          placeholder="Text input"
+        >
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">URL</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          placeholder="Text input"
+        >
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        <button class="button is-link">Submit</button>
+      </div>
+    </div>
+  </div>
+</section>
